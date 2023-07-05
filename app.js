@@ -21,7 +21,7 @@ btns.forEach((element) => {
 
 function myfunction(el) {
     if (el.getAttribute("id") === "btn") {
-        container.classList.add("active");
+        container.classList.toggle("active");
         img.src = "./images/johnsoncolor.png";
         detail.innerHTML = `   <h1>
             DWAYNE JOHNSON
@@ -32,7 +32,7 @@ function myfunction(el) {
           <h3>Jumanji</h3>
           <h3>Le retour de la momie</h3>`;
     } else if (el.getAttribute("id") === "btn1") {
-        container.classList.add("active");
+        container.classList.toggle("active");
         img.src = "./images/vincolor.png";
         detail.innerHTML = `   <h1>
             VIN DIESEL
@@ -46,7 +46,7 @@ function myfunction(el) {
           <h3>XXX</h3>
           <h3>Fast & Furious</h3>`;
     } else if (el.getAttribute("id") === "btn2") {
-        container.classList.add("active");
+        container.classList.toggle("active");
         img.src = "./images/imencolor.png";
         detail.innerHTML = `    <h1>
         IMEN ES
@@ -57,7 +57,7 @@ function myfunction(el) {
       <h3>Première Fois</h3>
       <h3>Essaie Encore</h3>`;
     } else if (el.getAttribute("id") === "btn3") {
-        container.classList.add("active");
+        container.classList.toggle("active");
         img.src = "./images/jessicacolor.png";
         detail.innerHTML = ` <h1>
                             JESSICA ALBA
@@ -68,7 +68,7 @@ function myfunction(el) {
       <h3>Sin City</h3>
       <h3>Fantastic Four</h3>`;
     } else if (el.getAttribute("id") === "btn4") {
-        container.classList.add("active");
+        container.classList.toggle("active");
         img.src = "./images/zitacolor.png";
         detail.innerHTML = ` <h1>
         ZITA<br />
