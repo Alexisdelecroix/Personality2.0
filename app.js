@@ -21,6 +21,11 @@ btns.forEach((element) => {
 
 function myfunction(el) {
     if (el.getAttribute("id") === "btn") {
+        btn.classList.add("active")
+        btn1.classList.remove("active")
+        btn2.classList.remove("active")
+        btn3.classList.remove("active")
+        btn4.classList.remove("active")
         container.classList.toggle("active");
         img.src = "./images/johnsoncolor.png";
         detail.innerHTML = `   <h1>
@@ -32,6 +37,11 @@ function myfunction(el) {
           <h3>Jumanji</h3>
           <h3>Le retour de la momie</h3>`;
     } else if (el.getAttribute("id") === "btn1") {
+        btn.classList.remove("active")
+        btn1.classList.add("active")
+        btn2.classList.remove("active")
+        btn3.classList.remove("active")
+        btn4.classList.remove("active")
         container.classList.toggle("active");
         img.src = "./images/vincolor.png";
         detail.innerHTML = `   <h1>
@@ -46,6 +56,11 @@ function myfunction(el) {
           <h3>XXX</h3>
           <h3>Fast & Furious</h3>`;
     } else if (el.getAttribute("id") === "btn2") {
+        btn.classList.remove("active")
+        btn1.classList.remove("active")
+        btn2.classList.add("active")
+        btn3.classList.remove("active")
+        btn4.classList.remove("active")
         container.classList.toggle("active");
         img.src = "./images/imencolor.png";
         detail.innerHTML = `    <h1>
@@ -57,6 +72,11 @@ function myfunction(el) {
       <h3>Première Fois</h3>
       <h3>Essaie Encore</h3>`;
     } else if (el.getAttribute("id") === "btn3") {
+        btn.classList.remove("active")
+        btn1.classList.remove("active")
+        btn2.classList.remove("active")
+        btn3.classList.add("active")
+        btn4.classList.remove("active")
         container.classList.toggle("active");
         img.src = "./images/jessicacolor.png";
         detail.innerHTML = ` <h1>
@@ -68,6 +88,11 @@ function myfunction(el) {
       <h3>Sin City</h3>
       <h3>Fantastic Four</h3>`;
     } else if (el.getAttribute("id") === "btn4") {
+        btn.classList.remove("active")
+        btn1.classList.remove("active")
+        btn2.classList.remove("active")
+        btn3.classList.remove("active")
+        btn4.classList.add("active")
         container.classList.toggle("active");
         img.src = "./images/zitacolor.png";
         detail.innerHTML = ` <h1>

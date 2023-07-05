@@ -35,7 +35,7 @@ nav .navigation {
 
 }
 
-nav .navigation li {
+.btn {
   font-size: 14px;
   color: blue;
   padding: 5px 10px;
@@ -45,6 +45,12 @@ nav .navigation li {
   text-align: center;
   font-family: "Limelight", sans-serif;
   cursor: pointer;
+}
+
+.btn.active{
+    color: white;
+    background-color: rgb(38, 38, 146);
+    border: 2px solid white;
 }
 
 /* nav .navigation li:hover{
