@@ -113,9 +113,6 @@ section .containerImg.active {
     left: 330px;
     background-color: rgba(38, 38, 146, 0.493)
 }
-
-
-
 @keyframes deplacement {
     from {
       top: 185px;
@@ -124,7 +121,6 @@ section .containerImg.active {
       top: 188px;
     }
   }
-
 .icone i {
   display: flex;
   justify-content: center;
