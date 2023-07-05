@@ -84,7 +84,10 @@ section .containerImg.active {
   height: 400px;
   object-fit: cover;
   transition: 1s;
+  
 }
+
+
 
 .imgBlack img.active {
   filter: grayscale(0);
@@ -93,19 +96,43 @@ section .containerImg.active {
 .icone {
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #0000007e;
   position: absolute;
   top: 185px;
   left: 103px;
   border-radius: 50%;
   z-index: 3;
+  animation-name: deplacement;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: 1s;
 }
+
+.icone.active {
+    left: 330px;
+    background-color: rgba(38, 38, 146, 0.493)
+}
+
+
+
+@keyframes deplacement {
+    from {
+      top: 185px;
+    }
+    to {
+      top: 188px;
+    }
+  }
 
 .icone i {
   display: flex;
   justify-content: center;
   margin-top: 2px;
+  color: #fff;
 }
+
+
 
 .detail {
   background-color: white;

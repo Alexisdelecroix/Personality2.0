@@ -1,6 +1,7 @@
 let container = document.getElementById("container");
 let img = document.getElementById("img");
 let icone = document.getElementById("icone");
+let iconeReverse = document.getElementById("iconeReverse");
 let detail = document.getElementById("detail");
 
 let btn = document.getElementById("btn");
@@ -114,4 +115,14 @@ icone.addEventListener("click", () => {
 function iconeFunct() {
     detail.classList.toggle("active");
     img.classList.toggle("active");
+
+    if (iconeReverse.classList.contains('fa-arrow-right')) {
+        iconeReverse.classList.remove('fa-arrow-right');
+        iconeReverse.classList.add('fa-arrow-left');
+        icone.classList.add("active");
+      } else {
+        iconeReverse.classList.remove('fa-arrow-left');
+        iconeReverse.classList.add('fa-arrow-right');
+        icone.classList.remove("active");
+      }
 }
